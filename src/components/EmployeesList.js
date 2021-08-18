@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import serverAddress from '../serverAddress.js';
 import { Link } from 'react-router-dom';
+import '../styles/EmployeeList/EmployeeList.css';
 
 function EmployeesList(props) {
     const [employeeList, setEmployeeList] = useState([]);

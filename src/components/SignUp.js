@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import Sha256 from '../Sha256.js';
 import serverAddress from '../serverAddress.js';
+import '../styles/SignUp/SignUp.css';
 
 function SignUp(props) {
     let firstNameRef = useRef()

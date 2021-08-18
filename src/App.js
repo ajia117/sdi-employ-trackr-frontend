@@ -38,7 +38,7 @@ function App({history}) {
       <Switch>
         <Route path='/login'>
           <LogIn setLoggedInUser={(value) => {setLoggedInUser(value)}}/>
-          <Link to='/signup'><button>Sign-up</button></Link>
+          <Link to='/signup'><button id='signUp'>Sign-up</button></Link>
         </Route>
         <Route path='/signup'>
           <SignUp />

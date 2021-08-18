@@ -1,1 +1,18 @@
-/* No CSS *//*# sourceMappingURL=App.css.map */
+.App {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+
+.App #signUp {
+  width: 100px;
+  height: 30px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: chocolate;
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+}
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,14 @@
+.SignUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  height: 300px;
+  width: 500px;
+  background-color: aqua;
+  margin-top: 20vh;
+  border-radius: 1em;
+}
+/*# sourceMappingURL=SignUp.css.map */

@@ -1,0 +1,15 @@
+.App {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    #signUp {
+        width: 100px;
+        height: 30px;
+        border: 0px;
+        border-radius: 5px;
+        background-color: chocolate;
+        position: fixed;
+        bottom: 50px;
+        left: 50px;
+    }
+}

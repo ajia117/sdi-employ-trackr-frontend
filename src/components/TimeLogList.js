@@ -1,6 +1,7 @@
 /* eslint-disable array-callback-return */
 import React, {useEffect, useState} from 'react';
 import serverAddress from '../serverAddress.js';
+import '../styles/TimeLogList/TimeLogList.css';
 
 function TimeLogList(props) {
     const [timeLogList, setTimeLogList] = useState([]);

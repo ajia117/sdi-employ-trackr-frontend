@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import serverAddress from '../serverAddress.js';
+import '../styles/PayHistory/PayHistory.css';
 
 function PayHistory({sentEmployee, loggedInUser, matched}) {
     const [tableList, setTableList] = useState([])
