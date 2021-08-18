@@ -5,28 +5,28 @@
     margin-top: 20vh;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 300px;
+    width: 13.3em;
+    height: 20em;
     background-color: aquamarine;
-    border-radius: 20px;
+    border-radius: 1.3em;
     form {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         #inner {
-            margin: 10px;
+            margin: .66em;
         }
         input {
-            width: 200px;
-            height: 30px;
-            border-radius: 5px;
-            margin-left: 5px;
+            width: 13.3em;
+            height: 2em;
+            border-radius: .33em;
+            margin-left: .33em;
         }
         button {
             width: 100px;
-            height: 30px;
-            border: 0px;
-            border-radius: 5px;
+            height: 2em;
+            border: 0em;
+            border-radius: .33em;
             background-color: chocolate;
         }
     }

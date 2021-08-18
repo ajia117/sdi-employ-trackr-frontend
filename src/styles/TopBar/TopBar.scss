@@ -2,16 +2,15 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     flex-direction: row;
-    width: 100%;
-    height: 80px;
+    width: 98vw;
+    justify-self: center;
+    margin-top: .33em;
+    height: 25vw;
+    box-shadow: 5px 5px 10px black;
+    max-height: 160px;
     background-color: aqua;
-    button {
-        width: 100px;
-        height: 30px;
-        border: 0;
-        border-radius: 10px;
-        background-color: chocolate;
-    }
+    position: relative;
+    border-radius: .5em;
     #leftSide {
         display: flex;
         grid-column-start: 1;
@@ -20,16 +19,26 @@
         height: 100%;
         justify-content: flex-start;
         align-items: center;
-        margin-left: 20px;
+        margin-left: 1.3em;
+        button {
+            width: 20vw;
+            height: 20vw;
+            max-height: 50px;
+            max-width: 50px;
+            border: 0px;
+            border-radius: 5px;
+            background-color: rgb(151, 209, 212);
+        }
     }
     h1 {
         display: flex;
         grid-column-start: 2;
         grid-column-end: 3;
-        width: 100%;
+        width: max-content;
         height: 100%;
         justify-content: center;
         align-content: center;
+        font-size: 2em;
     }
     #rightSide {
         display: flex;
@@ -42,19 +51,65 @@
         div {
             display: flex;
             flex-direction: column;
-            margin-right: 20px;
-            align-items: center;
+            align-items: flex-start;
             height: 70%;
             p {
-                margin: 5px;
+                margin: .33em;
+                width: 200%;
             }
             div {
                 display: flex;
                 flex-direction: row;
                 button {
-                    margin-left: 10px;
+                    margin-left: .66em;
                 }
             }
         }
     }
 }
+
+#switchBtn {
+    width: 20vw;
+    height: 20vw;
+    max-height: 50px;
+    max-width: 50px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: rgb(151, 209, 212);
+}
+
+#btnContainer {
+    margin-right: .33em;
+}
+
+#userDisplay {
+    width: max-content;
+    position: absolute;
+    bottom: -1em;
+    right: .35em;
+}
+
+@media screen and (max-width: 629px) {
+    #TopHeader {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 356px) {
+    #TopHeader {
+        font-size: 4vw;
+    }
+    #userDisplay {
+        font-size: 5vw;
+    }
+    #switchBtn {
+        width: 15vw;
+        height: 15vw;
+    }
+    #leftSide button {
+        width: 15vw;
+        height: 15vw;
+    }
+}
+
+

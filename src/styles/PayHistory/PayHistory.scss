@@ -1,0 +1,46 @@
+.tablePay {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    table {
+        box-shadow: 5px 10px 20px black;
+        background-color: aliceblue;
+        border-radius: .5em;
+        width: 90%;
+        justify-self: center;
+        margin-top: 1em;
+        tbody {
+            width: 100%;
+            tr {
+                width: 100%
+            }
+            tr:nth-child(even) {background: #CCC;}
+            tr:nth-child(odd) {background: #FFF}
+        }
+    }
+}
+
+#pBtnContainer {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    button {
+        width: 40vw;
+        height: 20vw;
+        max-height: 50px;
+        max-width: 120px;
+        border: 0px;
+        border-radius: 5px;
+        background-color: rgb(151, 209, 212);
+        margin-top: 2em;
+        margin-left: 1em;
+        margin-right: 1em;
+        box-shadow: 5px 5px 10px black;
+    }
+}
+
+#viewTag {
+    position: fixed;
+    bottom: .5em;
+    left: .33em;
+}

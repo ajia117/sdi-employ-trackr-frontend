@@ -1,1 +1,68 @@
-/* No CSS *//*# sourceMappingURL=PayHistory.css.map */
+.tablePay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tablePay table {
+  -webkit-box-shadow: 5px 10px 20px black;
+          box-shadow: 5px 10px 20px black;
+  background-color: aliceblue;
+  border-radius: .5em;
+  width: 90%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-top: 1em;
+}
+
+.tablePay table tbody {
+  width: 100%;
+}
+
+.tablePay table tbody tr {
+  width: 100%;
+}
+
+.tablePay table tbody tr:nth-child(even) {
+  background: #CCC;
+}
+
+.tablePay table tbody tr:nth-child(odd) {
+  background: #FFF;
+}
+
+#pBtnContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#pBtnContainer button {
+  width: 40vw;
+  height: 20vw;
+  max-height: 50px;
+  max-width: 120px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #97d1d4;
+  margin-top: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+  -webkit-box-shadow: 5px 5px 10px black;
+          box-shadow: 5px 5px 10px black;
+}
+
+#viewTag {
+  position: fixed;
+  bottom: .5em;
+  left: .33em;
+}
+/*# sourceMappingURL=PayHistory.css.map */

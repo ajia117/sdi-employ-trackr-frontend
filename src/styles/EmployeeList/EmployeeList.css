@@ -1,1 +1,37 @@
-/* No CSS *//*# sourceMappingURL=EmployeeList.css.map */
+.EmployeeList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.EmployeeList table {
+  -webkit-box-shadow: 5px 10px 20px black;
+          box-shadow: 5px 10px 20px black;
+  background-color: aliceblue;
+  border-radius: .5em;
+  width: 90%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-top: 1em;
+}
+
+.EmployeeList table tbody {
+  width: 100%;
+}
+
+.EmployeeList table tbody tr {
+  width: 100%;
+}
+
+.EmployeeList table tbody tr:nth-child(even) {
+  background: #CCC;
+}
+
+.EmployeeList table tbody tr:nth-child(odd) {
+  background: #FFF;
+}
+/*# sourceMappingURL=EmployeeList.css.map */

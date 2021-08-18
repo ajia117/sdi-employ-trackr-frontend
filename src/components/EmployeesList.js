@@ -15,7 +15,7 @@ function EmployeesList(props) {
     }, [])
 
     return (
-        <div>
+        <div className='EmployeeList'>
             <table>
                 <thead>
                     <tr>

@@ -15,11 +15,15 @@ function PayHistory({sentEmployee, loggedInUser, matched}) {
             return (
                 <Link to='/timelogs'><button>Manager View</button></Link>
             );
-        } else if (matched !== undefined) {
-            return (
-                <p>{`VIEWING: ${employee.first_name} ${employee.last_name}`}</p>
-            );
         }
+    };
+
+    const renderTag = () => {
+        if (matched !== undefined) {
+            return (
+                <p id='viewTag'>{`VIEWING: ${employee.first_name} ${employee.last_name}`}</p>
+            );
+        };
     };
 
     function setClock(user) {
@@ -85,32 +89,37 @@ function PayHistory({sentEmployee, loggedInUser, matched}) {
     }, [employee, matched])
     return (
         <div className='PayHistory'>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Employee ID</th>
-                        <th>Work Week</th>
-                        <th>Pay Rate</th>
-                        <th>Hours Worked</th>
-                        <th>Weeks Pay</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {tableList.map((item, i) => {
-                            return (
-                                <tr key={`${i}`}>
-                                    <td>{item.employee_id}</td>
-                                    <td>{item.work_week}</td>
-                                    <td>{item.pay_rate}</td>
-                                    <td>{item.hours_worked}</td>
-                                    <td>{item.weeks_pay}</td>
-                                </tr>
-                            );
-                        })}
-                </tbody>
-            </table>
-            {renderManagerBtn()}
-            {renderClockBtn()}
+            <div className='tablePay'>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Employee ID</th>
+                            <th>Work Week</th>
+                            <th>Pay Rate</th>
+                            <th>Hours Worked</th>
+                            <th>Weeks Pay</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {tableList.map((item, i) => {
+                                return (
+                                    <tr key={`${i}`}>
+                                        <td>{item.employee_id}</td>
+                                        <td>{item.work_week}</td>
+                                        <td>{item.pay_rate}</td>
+                                        <td>{item.hours_worked}</td>
+                                        <td>{item.weeks_pay}</td>
+                                    </tr>
+                                );
+                            })}
+                    </tbody>
+                </table>
+            </div>
+            <div id='pBtnContainer'>
+                {renderManagerBtn()}
+                {renderClockBtn()}
+            </div>
+            {renderTag()}
         </div>
     );
 }

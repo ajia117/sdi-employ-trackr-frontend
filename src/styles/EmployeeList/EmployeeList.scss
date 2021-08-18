@@ -1,0 +1,21 @@
+.EmployeeList {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    table {
+        box-shadow: 5px 10px 20px black;
+        background-color: aliceblue;
+        border-radius: .5em;
+        width: 90%;
+        justify-self: center;
+        margin-top: 1em;
+        tbody {
+            width: 100%;
+            tr {
+                width: 100%
+            }
+            tr:nth-child(even) {background: #CCC;}
+            tr:nth-child(odd) {background: #FFF}
+        }
+    }
+}

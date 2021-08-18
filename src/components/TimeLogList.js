@@ -15,7 +15,7 @@ function TimeLogList(props) {
     }, [])
     
     return (
-        <div>
+        <div className='TimeLogList'>
             <table>
                 <thead>
                     <tr>
