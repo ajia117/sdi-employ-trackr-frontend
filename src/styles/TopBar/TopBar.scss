@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .TopBar {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -6,11 +8,11 @@
     justify-self: center;
     margin-top: .33em;
     height: 25vw;
-    box-shadow: 5px 5px 10px black;
+    // box-shadow: 5px 5px 10px black;
     max-height: 160px;
-    background-color: aqua;
+    background-color: $PrimaryColor;
     position: relative;
-    border-radius: .5em;
+    // border-radius: .5em;
     #leftSide {
         display: flex;
         grid-column-start: 1;
@@ -27,7 +29,7 @@
             max-width: 50px;
             border: 0px;
             border-radius: 5px;
-            background-color: rgb(151, 209, 212);
+            background-color: $BtnColor;
         }
     }
     h1 {
@@ -39,6 +41,7 @@
         justify-content: center;
         align-content: center;
         font-size: 2em;
+        color: $TextSecondaryColor;
     }
     #rightSide {
         display: flex;
@@ -75,7 +78,7 @@
     max-width: 50px;
     border: 0px;
     border-radius: 5px;
-    background-color: rgb(151, 209, 212);
+    background-color: $BtnColor;
 }
 
 #btnContainer {
@@ -86,6 +89,7 @@
     width: max-content;
     position: absolute;
     bottom: -1em;
+    color: $TextSecondaryColor;
     right: .35em;
 }
 
@@ -113,3 +117,8 @@
 }
 
 
+@media screen and (max-height: 400px) {
+    .TopBar {
+        max-height: 20vh;
+    }
+}

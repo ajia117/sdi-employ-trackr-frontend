@@ -9,7 +9,7 @@ CREATE TABLE Users(
 "is_clocked_in" boolean,
 "rate" money,
 "auth_hash" varchar NOT NULL,
-"is_manager" boolean NOT NULL);
+"is_manager" bool`ean NOT NULL);
 
 CREATE TABLE Time_Table(
 "sign_in_id" SERIAL NOT NULL UNIQUE PRIMARY KEY,

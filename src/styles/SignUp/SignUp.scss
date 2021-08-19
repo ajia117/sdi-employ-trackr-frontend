@@ -1,10 +1,61 @@
+@import '../variables.scss';
+
 .SignUp {
     display: flex;
+    flex-direction: column;
     justify-self: center;
     align-self: center;
-    height: 20em;
-    width: 33em;
-    background-color: aqua;
-    margin-top: 20vh;
-    border-radius: 1em;
+    justify-content: center;
+    min-width: 15em;
+    margin-top: 10vh;
+    width: 95vw;
+    box-shadow: 5px 10px 20px black;
+    height: 100%;
+    background-color: aquamarine;
+    border-radius: 1.3em;
+    #SignUpHeader {
+        display:flex;
+        width: 100%;
+        justify-content: center;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #inner {
+            margin: .66em;
+        }
+        label {
+            display: flex;
+            justify-content: flex-end;
+            font-family: 'Courier New', Courier, monospace;
+            width: 50%;
+            justify-self: center;
+            margin: 5px;
+        }
+        input {
+            width: 13.3em;
+            height: 2em;
+            border-radius: .33em;
+            margin-left: .33em;
+            
+        }
+        button {
+            width: 120px;
+            height: 50px;
+            font-size: 1.33em;
+            border: 0em;
+            border-radius: .33em;
+            background-color: $BtnColor;
+            
+        }
+    }
+}
+@media screen and (orientation: landscape) and (max-height: 500px) {
+    .SignUp {
+        margin-top: 3vh;
+        align-self: flex-start;
+        margin-top: 10vh;
+        height: 100%;
+    }
 }

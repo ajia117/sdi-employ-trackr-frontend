@@ -2,13 +2,89 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   justify-self: center;
   -ms-flex-item-align: center;
       align-self: center;
-  height: 20em;
-  width: 33em;
-  background-color: aqua;
-  margin-top: 20vh;
-  border-radius: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 15em;
+  margin-top: 10vh;
+  width: 95vw;
+  -webkit-box-shadow: 5px 10px 20px black;
+          box-shadow: 5px 10px 20px black;
+  height: 100%;
+  background-color: aquamarine;
+  border-radius: 1.3em;
+}
+
+.SignUp #SignUpHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.SignUp form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.SignUp form #inner {
+  margin: .66em;
+}
+
+.SignUp form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-family: 'Courier New', Courier, monospace;
+  width: 50%;
+  justify-self: center;
+  margin: 5px;
+}
+
+.SignUp form input {
+  width: 13.3em;
+  height: 2em;
+  border-radius: .33em;
+  margin-left: .33em;
+}
+
+.SignUp form button {
+  width: 120px;
+  height: 50px;
+  font-size: 1.33em;
+  border: 0em;
+  border-radius: .33em;
+  background-color: limegreen;
+}
+
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  .SignUp {
+    margin-top: 3vh;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: 10vh;
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=SignUp.css.map */

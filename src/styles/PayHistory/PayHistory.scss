@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .tablePay {
     display: flex;
     width: 100vw;
@@ -31,7 +33,7 @@
         max-width: 120px;
         border: 0px;
         border-radius: 5px;
-        background-color: rgb(151, 209, 212);
+        background-color: $BtnColor;
         margin-top: 2em;
         margin-left: 1em;
         margin-right: 1em;

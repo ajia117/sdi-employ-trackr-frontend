@@ -65,7 +65,7 @@ function SignUp(props) {
 
     return (
         <div className='SignUp'>
-            <h2>Sign-Up</h2>
+            <h2 id='SignUpHeader'>Sign-Up</h2>
             <form>
                 <label>First Name:
                     <input ref={firstNameRef} type='text'></input>

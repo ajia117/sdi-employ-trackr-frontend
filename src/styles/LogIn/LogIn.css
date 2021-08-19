@@ -7,17 +7,29 @@
       -ms-flex-direction: column;
           flex-direction: column;
   justify-self: center;
-  margin-top: 20vh;
+  -ms-flex-item-align: center;
+      align-self: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 13.3em;
-  height: 20em;
+  min-width: 15em;
+  margin-top: 20vh;
+  width: 95vw;
+  -webkit-box-shadow: 5px 10px 20px black;
+          box-shadow: 5px 10px 20px black;
+  height: 100%;
   background-color: aquamarine;
   border-radius: 1.3em;
+}
+
+.LogIn #LogInHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .LogIn form {
@@ -28,13 +40,25 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .LogIn form #inner {
   margin: .66em;
+}
+
+.LogIn form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-family: 'Courier New', Courier, monospace;
+  width: 50%;
+  justify-self: center;
 }
 
 .LogIn form input {
@@ -45,10 +69,29 @@
 }
 
 .LogIn form button {
-  width: 100px;
-  height: 2em;
+  width: 120px;
+  height: 50px;
+  font-size: 1.33em;
   border: 0em;
   border-radius: .33em;
-  background-color: chocolate;
+  background-color: limegreen;
+}
+
+#signUp {
+  width: 120px;
+  height: 50px;
+  font-size: 1.33em;
+  border: 0em;
+  border-radius: .33em;
+  background-color: limegreen;
+}
+
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  .LogIn {
+    margin-top: 3vh;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    height: 90%;
+  }
 }
 /*# sourceMappingURL=LogIn.css.map */
