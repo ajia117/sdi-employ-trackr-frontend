@@ -13,6 +13,8 @@ function TimeLogList(props) {
                 setTimeLogList(data)
             })
     }, [])
+
+    console.log(timeLogList);
     
     return (
         <div className='TimeLogList'>
@@ -28,9 +30,15 @@ function TimeLogList(props) {
                 <tbody>
                     {timeLogList.map((item, i) => {
                         let itemDateIn = new Date(item.clock_in)
-                        let itemDateOut = new Date(item.clock_out)
                         let inDate = `${itemDateIn.getFullYear()}-${itemDateIn.getMonth()}-${itemDateIn.getDate()} @ ${itemDateIn.getHours()}:${itemDateIn.getMinutes() < 10 ? `0${itemDateIn.getMinutes()}` : itemDateIn.getMinutes()}`
-                        let outDate = `${itemDateOut.getFullYear()}-${itemDateOut.getMonth()}-${itemDateOut.getDate()} @ ${itemDateOut.getHours()}:${itemDateIn.getMinutes() < 10 ? `0${itemDateIn.getMinutes()}` : itemDateIn.getMinutes()}`
+
+                        let itemDateOut, outDate;
+                        if(item.clock_out){
+                            itemDateOut = new Date(item.clock_out)
+                            outDate = `${itemDateOut.getFullYear()}-${itemDateOut.getMonth()}-${itemDateOut.getDate()} @ ${itemDateOut.getHours()}:${itemDateIn.getMinutes() < 10 ? `0${itemDateIn.getMinutes()}` : itemDateIn.getMinutes()}`
+                        } else {
+                            outDate = 'Not clocked out';
+                        }
                         return (
                             <tr key={i}>
                                 <td>{item.sign_in_id}</td>

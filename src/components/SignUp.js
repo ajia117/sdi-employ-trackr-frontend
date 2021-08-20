@@ -82,8 +82,9 @@ function SignUp(props) {
                 <label>Pay Rate:
                     <input ref={rateRef} type='number'></input>
                 </label>
-                <label>Manager Status:
+                <label>
                     <input ref={isManagerRef} type='checkbox'></input>
+                    <span>Manager Status</span>
                 </label>
                 <button onClick={(e) => {
                     e.preventDefault()

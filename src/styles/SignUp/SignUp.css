@@ -18,7 +18,7 @@
   -webkit-box-shadow: 5px 10px 20px black;
           box-shadow: 5px 10px 20px black;
   height: 100%;
-  background-color: aquamarine;
+  background-color: lightgrey;
   border-radius: 1.3em;
 }
 
@@ -75,7 +75,8 @@
   font-size: 1.33em;
   border: 0em;
   border-radius: .33em;
-  background-color: limegreen;
+  background-color: #3b5998;
+  color:white;
 }
 
 @media screen and (orientation: landscape) and (max-height: 500px) {

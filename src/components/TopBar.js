@@ -17,9 +17,9 @@ function TopBar({location, loggedInUser, setLoggedInUser}) {
             case '/signup':
                 return <div id='leftSide'><Link to='/login'><button>Back</button></Link></div>
             case '/employees':
-                return <div id='leftSide'><Link to='/timelogs'><button>Switch Views</button></Link></div>
+                return <div id='leftSide'><Link to='/timelogs'><button>Switch Time</button></Link></div>
             case '/timelogs':
-                return <div id='leftSide'><Link to='/employees'><button>Switch Views</button></Link></div>
+                return <div id='leftSide'><Link to='/employees'><button>Switch List</button></Link></div>
         }
     }
 
@@ -67,10 +67,17 @@ function TopBar({location, loggedInUser, setLoggedInUser}) {
                     <p id='userDisplay'>{`USER: ${loggedInUser.first_name} ${loggedInUser.last_name}`}</p>
                 </>
             )
-        } else if (location === '/timelogs' || location === '/employees') {
+        } else if (location === '/timelogs') {
             return (
                 <>
-                    <p id='userDisplay'>{`MANAGER: ${loggedInUser.first_name} ${loggedInUser.last_name}`}</p>
+                    <p id='userDisplay'>{`Viewing time logs; MANAGER: ${loggedInUser.first_name} ${loggedInUser.last_name}`}</p>
+                </>
+            )
+
+        } else if(location === '/employees') {
+            return (
+                <>
+                    <p id='userDisplay'>{`Viewing all employees; MANAGER: ${loggedInUser.first_name} ${loggedInUser.last_name}`}</p>
                 </>
             )
         } else if (location.match(/\/employee\/\d{1,}$/i)) {
